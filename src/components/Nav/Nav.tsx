@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom'
 function Nav() {
     return (
         <nav className={`${styles.nav} container`}>
-            <Link to="/" className={styles.navLink}>
+            <Link to="/albums" className={styles.navLink}>
                 <img src={albumsIcon} alt="Albums Icon" />
             </Link>
-            <Link to="albums" className={styles.navLink}>
+            <Link to="/" className={styles.navLink}>
                 <img src={postsIcon} alt="Posts Icon" />
             </Link>
             <Link to="todos" className={styles.navLink}>
