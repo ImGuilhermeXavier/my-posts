@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Albuns() {
+function Albums() {
     return <div></div>
 }
 
-export default Albuns
+export default Albums

@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    border-top: #eee 2px solid;
+    align-items: center;
+}
+
+.navLink {
+    padding: 2rem 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navLink:active,
+.navLink:hover {
+    background: #e5e5e5;
+}
