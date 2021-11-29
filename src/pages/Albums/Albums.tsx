@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Albums() {
-    return <div></div>
+    return <section>ALBUMS</section>
 }
 
 export default Albums

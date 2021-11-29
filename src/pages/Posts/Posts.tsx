@@ -1,11 +1,7 @@
 import React from 'react'
 
 function Posts() {
-    return (
-        <div>
-            
-        </div>
-    )
+    return <section>POSTS</section>
 }
 
 export default Posts

@@ -1,11 +1,7 @@
 import React from 'react'
 
 function Todos() {
-    return (
-        <div>
-            
-        </div>
-    )
+    return <section>TODOS</section>
 }
 
 export default Todos
