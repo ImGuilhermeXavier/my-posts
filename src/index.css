@@ -23,7 +23,7 @@ body {
 
 main {
   background: white;
-  height: 100vh;
+  min-height: 100vh;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 
