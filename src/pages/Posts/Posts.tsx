@@ -29,7 +29,9 @@ function Posts() {
                 <div className={styles.cards}>
                     {posts.map(({ title, userId, id }) => (
                         <div className={styles.card} key={id}>
-                            <p className={styles.title}>{title}</p>
+                            <p className={styles.title}>
+                                {title.substring(0, 30)}
+                            </p>
                             <div>
                                 {users.map(
                                     (user) =>

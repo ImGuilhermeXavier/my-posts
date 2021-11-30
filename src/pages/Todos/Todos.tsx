@@ -30,7 +30,9 @@ function Todos() {
                 <div className={styles.cards}>
                     {todos.map(({ title, userId, id }) => (
                         <div className={styles.card} key={id}>
-                            <p className={styles.title}>{title}</p>
+                            <p className={styles.title}>
+                                {title.substring(0, 30)}
+                            </p>
                             <div>
                                 {users.map(
                                     (user) =>
@@ -43,7 +45,7 @@ function Todos() {
                     ))}
                 </div>
             ) : (
-                <div>Not found...</div>
+                <div>Loading...</div>
             )}
         </section>
     )
