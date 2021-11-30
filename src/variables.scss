@@ -1,0 +1,49 @@
+// Main Colors
+$primary-color: #000000;
+$secondary-color: #222222;
+$tertiary-color: #ffffff;
+
+// Grayscale
+$black: #000000;
+$dark-gray: #222222;
+$gray: #656565;
+$light-gray: #9b9b9b;
+$white: #ffffff;
+$lg: #e5e5e5;
+
+// Screen Sizes
+@mixin screen-extra-xs-up {
+    @media (min-width: 350px) {
+        @content;
+    }
+}
+
+@mixin screen-xs-up {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin screen-sm-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin screen-md-up {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin screen-lg-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin screen-xl-up {
+    @media (min-width: 1920px) {
+        @content;
+    }
+}

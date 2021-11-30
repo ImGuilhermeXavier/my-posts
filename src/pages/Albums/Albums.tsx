@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import api from '../../api'
 import { GlobalContext } from '../../GlobalContext'
+import styles from '../../App.module.scss'
 
 interface AlbumsInterface extends Array<AlbumsInterface> {
     userId: number
@@ -25,15 +26,15 @@ function Albums() {
         <section>
             <h1>My Albums</h1>
             {albums ? (
-                <div>
-                    {albums.map(({ title, userId }) => (
-                        <div>
-                            <p>{title}</p>
+                <div className={styles.cards}>
+                    {albums.map(({ title, userId, id }) => (
+                        <div className={styles.card} key={id}>
+                            <p className={styles.title}>{title}</p>
                             <div>
                                 {users.map(
                                     (user) =>
                                         user.id === userId && (
-                                            <div>{user.name}</div>
+                                            <div key={user.id}>{user.name}</div>
                                         ),
                                 )}
                             </div>

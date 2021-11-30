@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Archivo', 'Helvetica Neue', sans-serif;
+    background-color: $lg;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background: $white;
+    min-height: 100vh;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background: $white;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+}

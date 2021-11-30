@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 1rem;
+
+    @include screen-md-up {
+        margin: 1rem 1rem 140px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 100px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+
+    @include screen-md-up {
+        padding: 1rem 2rem;
+    }
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
